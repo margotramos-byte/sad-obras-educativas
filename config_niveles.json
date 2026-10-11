@@ -1,0 +1,138 @@
+{
+ "cortes": {
+  "costo": [
+   0.5
+  ],
+  "plazo": [
+   0.45
+  ]
+ },
+ "niveles": {
+  "costo": [
+   "Vigilancia estándar",
+   "Vigilancia prioritaria"
+  ],
+  "plazo": [
+   "Vigilancia estándar",
+   "Vigilancia prioritaria"
+  ]
+ },
+ "modelos": {
+  "costo": "Random Forest",
+  "plazo": "Random Forest"
+ },
+ "frecuencia_observada": {
+  "costo": [
+   {
+    "nivel": "Vigilancia estándar",
+    "n": 196,
+    "pct_contratos": 0.74,
+    "frecuencia_desviacion": 0.189
+   },
+   {
+    "nivel": "Vigilancia prioritaria",
+    "n": 69,
+    "pct_contratos": 0.26,
+    "frecuencia_desviacion": 0.638
+   }
+  ],
+  "plazo": [
+   {
+    "nivel": "Vigilancia estándar",
+    "n": 169,
+    "pct_contratos": 0.786,
+    "frecuencia_desviacion": 0.101
+   },
+   {
+    "nivel": "Vigilancia prioritaria",
+    "n": 46,
+    "pct_contratos": 0.214,
+    "frecuencia_desviacion": 0.391
+   }
+  ]
+ },
+ "desempeno": {
+  "costo": {
+   "modelo": "Random Forest",
+   "n": 265,
+   "positivos": 81,
+   "bal_acc": 0.68,
+   "roc_auc": 0.71,
+   "pr_auc": 0.613,
+   "pr_auc_azar": 0.306
+  },
+  "plazo": {
+   "modelo": "Random Forest",
+   "n": 215,
+   "positivos": 35,
+   "bal_acc": 0.668,
+   "roc_auc": 0.702,
+   "pr_auc": 0.456,
+   "pr_auc_azar": 0.163
+  }
+ },
+ "categorias": {
+  "nivel_gobierno": [
+   "GOBIERNO LOCAL",
+   "GOBIERNO NACIONAL",
+   "GOBIERNO REGIONAL"
+  ],
+  "sistema_contratacion": [
+   "Esquema mixto",
+   "Precios unitarios",
+   "Suma alzada"
+  ],
+  "tipo_procedimiento_2": [
+   "Adjudicación Simplificada",
+   "Convenio/Directa",
+   "Licitación Pública",
+   "Procedimiento Especial"
+  ],
+  "tipo_proveedor_2": [
+   "Consorcio",
+   "Individual"
+  ],
+  "provincia": [
+   "BARRANCA",
+   "CAJATAMBO",
+   "CANETE",
+   "CANTA",
+   "HUARAL",
+   "HUAROCHIRI",
+   "HUAURA",
+   "LIMA",
+   "OYON",
+   "YAUYOS"
+  ]
+ },
+ "rangos": {
+  "monto_adjudicado": [
+   77667.54,
+   49456068.99
+  ],
+  "reduccion_pct": [
+   -26.8235700217621,
+   10.000000000000009
+  ],
+  "n_ofertantes": [
+   1.0,
+   59.0
+  ],
+  "dias_conv_bp": [
+   1.0,
+   195.0
+  ],
+  "dias_bp_cons": [
+   0.0,
+   98.0
+  ],
+  "plazo_original_dias": [
+   30.0,
+   547.0
+  ],
+  "anio_inicio": [
+   2020.0,
+   2025.0
+  ]
+ }
+}
